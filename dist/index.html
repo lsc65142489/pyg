@@ -27,18 +27,60 @@
 
         <!-- 分类菜单开始 -->
         <div class="pyg_cates">
-            
+
         </div>
         <!-- 分类菜单结束-->
 
         <!-- 商品的列表开始 -->
+        <div class="pyg_goodslist">
+            <div class="goods_item">
+                <!-- 大图片，即标题 -->
+                <img src="http://image4.suning.cn/uimg/cms/img/149559219946350066.png" alt="">
+                <!-- 小商品列表 -->
+                <ul class="goods">
+                    <li>
+                        <!-- 商品的详情 -->
+                        <a href="javascript:;" class="goods_detail">
+                            <!-- 图片 -->
+                            <img src="http://image2.suning.cn/uimg/b2c/newcatentries/0070098033-000000000132597093_2_800x800.jpg"
+                                class="goods_small_logo" alt="">
+                            <!-- 名称 -->
+                            <div class="goods_name">五星级宾馆酒店非一次性拖鞋室内居家待客地板厚底防滑棉拖春夏男女情侣款条纹HTX-024</div>
+                            <!-- 价格 -->
+                            <div class="goods_price">￥99</div>
+                        </a>
+                        <!-- 类似的商品 -->
+                        <a href="javascript:;" class="mui-btn mui-btn-primary mui-btn-outlined similar">找相似</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
         <!-- 商品的列表结束 -->
     </div>
-    <footer class="pyg_footer">尾部</footer>
+    <footer class="pyg_footer">
+        <a href="javascript:;">
+            <i class="fa fa-home"></i>
+            <div>首页</div>
+        </a>
+        <a href="category.html">
+            <i class="fa fa-list-ul"></i>
+            <div>分类</div>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-shopping-cart"></i>
+            <div>购物车</div>
+        </a>
+        <a href="javascript:;">
+            <i class="fa fa-user-circle-o"></i>
+            <div>我的</div>
+        </a>
+    </footer>
 </body>
 
 </html>
 <!-- 模板开始 -->
+<!-- 轮播图模板 -->
 <script type="text/html" id="pyg_slide">
     <div class="mui-slider">
         <!-- 图片的层级 -->
@@ -62,7 +104,36 @@
         </div>
        </div>
 </script>
-
+<!-- 产品列表模板 -->
+<script type="text/html" id="pyg_goodslist">
+    {{each arr items1 value1 }}
+    <div class="goods_item">
+            <!-- 大图片，即标题 -->
+            <img src="{{items1.group_img}}" alt="">
+            <!-- 小商品列表 -->
+            <ul class="goods">
+                <!-- 因为上面你的goods里面还有数据，所以这时候可以直接使用上面的goods再来做一次循环渲染 -->
+                {{each items1.goods items2 value2}}
+                <li>
+                        <!-- 商品的详情 -->
+                        <a href="javascript:;" class="goods_detail">
+                            <!-- 图片 -->
+                            <img src="{{ items2.goods_small_logo}}"
+                                class="goods_small_logo" alt="">
+                            <!-- 名称 -->
+                            <div class="goods_name">{{items2.goods_name}}</div>
+                            <!-- 价格 -->
+                            <div class="goods_price">￥{{items2.goods_price}}</div>
+                        </a>
+                        <!-- 类似的商品 -->
+                        <a href="javascript:;" class="mui-btn mui-btn-primary mui-btn-outlined similar">找相似</a>
+                    </li>
+                {{/each}}
+                
+            </ul>
+        </div>
+    {{/each}}
+</script>
 <!-- 模板结束 -->
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>

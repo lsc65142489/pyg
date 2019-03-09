@@ -1,23 +1,17 @@
-{
-    "data": [
-        {
-            "image_src": "https://lg-igjc8p1o-1256763078.cos.ap-shanghai.myqcloud.com/upload/banner1.png",
-            "open_type": "navigate",
-            "goods_id": "55578"
-        },
-        {
-            "image_src": "https://lg-igjc8p1o-1256763078.cos.ap-shanghai.myqcloud.com/upload/banner2.png",
-            "open_type": "navigate",
-            "goods_id": "17927"
-        },
-        {
-            "image_src": "https://lg-igjc8p1o-1256763078.cos.ap-shanghai.myqcloud.com/upload/banner3.png",
-            "open_type": "navigate",
-            "goods_id": "51216"
-        }
-    ],
-    "meta": {
-        "msg": "获取成功",
-        "status": 200
-    }
-}
+[
+    {
+        "group_img": "http://image4.suning.cn/uimg/cms/img/149559219946350066.png",
+        "goods": [
+            {
+                "goods_id": 55891,
+                "goods_name": "五星级宾馆酒店非一次性拖鞋室内居家待客地板厚底防滑棉拖春夏男女情侣款条纹HTX-024",
+                "goods_price": 10,
+                "goods_big_logo": "http://image2.suning.cn/uimg/b2c/newcatentries/0070098033-000000000132597093_2_800x800.jpg",
+                "goods_small_logo": "http://image2.suning.cn/uimg/b2c/newcatentries/0070098033-000000000132597093_2_400x400.jpg",
+                "cat_id": 959
+            }
+            
+        ]
+    },
+   
+]

@@ -4,7 +4,9 @@ $(function () {
   // 定义一个初始化函数
   function init() {
     swiperData();
-    catitems();
+    catitems(); // 调用商品列表部分
+
+    goodslist();
   }
 
   ;
@@ -57,6 +59,23 @@ $(function () {
         $(".pyg_cates").html(html);
       } else {
         console.log("请求失败", result);
+      }
+    });
+  } // 商品列表部分
+
+
+  function goodslist() {
+    // 发送请求
+    $.get("http://api.pyg.ak48.xyz/api/public/v1/home/goodslist", function (result) {
+      if (result.meta.status == 200) {
+        // console.log(result)
+        // 获取要渲染的数据
+        var data = result.data; // 生成要渲染的数据， 这里的data是数组，要转成对象
+
+        var html = template("pyg_goodslist", {
+          arr: data
+        });
+        $(".pyg_goodslist").html(html);
       }
     });
   }

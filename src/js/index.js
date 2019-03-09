@@ -4,6 +4,8 @@ $(function () {
         swiperData();
 
         catitems();
+        // 调用商品列表部分
+        goodslist();
     };
     init();
 
@@ -59,4 +61,19 @@ $(function () {
             }
         })
     }
+
+    // 商品列表部分
+    function goodslist() { 
+        // 发送请求
+        $.get("http://api.pyg.ak48.xyz/api/public/v1/home/goodslist",(result)=>{
+            if(result.meta.status==200){
+                // console.log(result)
+                // 获取要渲染的数据
+                let data=result.data;
+                // 生成要渲染的数据， 这里的data是数组，要转成对象
+                let html=template("pyg_goodslist",{arr:data});
+                $(".pyg_goodslist").html(html);
+            }
+        })
+     }
 })
