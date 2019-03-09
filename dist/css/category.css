@@ -55,5 +55,65 @@ img {
 .pyg_footer a div {
   font-size: 13px;
 }
+.pyg_view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+.left_box {
+  width: 80px;
+  overflow: scroll;
+}
+.left_box .left_menu li {
+  height: 40px;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.left_box .left_menu .active {
+  border-left: 5px solid #0094ff;
+  background-color: #fff;
+}
+.right_box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #0094ff;
+  overflow: scroll;
+  background-color: #fff;
+}
+.right_box .right_item {
+  font-size: 13px;
+}
+.right_box .right_item .item_title {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+}
+.right_box .right_item .item_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.right_box .right_item .item_list li {
+  width: 33.33%;
+  text-align: center;
+}
+.right_box .right_item .item_list li a {
+  color: #000;
+}
+.right_box .right_item .item_list li a img {
+  width: 80%;
+}
 
 /*# sourceMappingURL=category.css.map */

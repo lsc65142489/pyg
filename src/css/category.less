@@ -1,1 +1,58 @@
 @import "./common.less";
+
+.pyg_view{
+    display: flex;
+    // 在这里为什么要加ovh呢，这是因为，我们想要实现，两个列表是单独的滑动，所以要把之前的scroll编程hidden，同时下面加上scroll
+    overflow: hidden;
+}
+// 默认情况下，子项的宽度=内容撑开
+// 子项的高度=父项的高度
+
+.left_box{
+    width: 80px;
+    overflow: scroll;
+    .left_menu{
+        li{
+            height: 40px;
+            font-size: 15px;
+            // 这里使用的flex只是为了能够实现水平局居中对其，也可以使用lh来实现
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .active{
+            border-left: 5px solid #0094ff;
+            background-color: #fff;
+        }
+    }
+}
+.right_box{
+    flex: 1;
+    color: #0094ff;
+    overflow: scroll;
+    background-color: #fff;
+    .right_item{
+        font-size: 13px;
+        .item_title{
+            height: 40px;
+            line-height: 40px;
+            padding-left: 15px;
+            
+        }
+        .item_list{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 33.33%;
+                text-align: center;
+                a{
+                    color: #000;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+
+        }
+    }
+}

@@ -1,17 +1,150 @@
 [
     {
-        "group_img": "http://image4.suning.cn/uimg/cms/img/149559219946350066.png",
-        "goods": [
+        "cat_id": 1,
+        "cat_name": "大家电",
+        "cat_pid": 0,
+        "cat_level": 0,
+        "cat_deleted": false,
+        "cat_icon": "full/none.jpg",
+        "children": [
             {
-                "goods_id": 55891,
-                "goods_name": "五星级宾馆酒店非一次性拖鞋室内居家待客地板厚底防滑棉拖春夏男女情侣款条纹HTX-024",
-                "goods_price": 10,
-                "goods_big_logo": "http://image2.suning.cn/uimg/b2c/newcatentries/0070098033-000000000132597093_2_800x800.jpg",
-                "goods_small_logo": "http://image2.suning.cn/uimg/b2c/newcatentries/0070098033-000000000132597093_2_400x400.jpg",
-                "cat_id": 959
+                "cat_id": 3,
+                "cat_name": "电视",
+                "cat_pid": 1,
+                "cat_level": 1,
+                "cat_deleted": false,
+                "cat_icon": "full/none.jpg",
+                "children": [
+                    {
+                        "cat_id": 5,
+                        "cat_name": "曲面电视",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/2fb113b32f7a2b161f5ee4096c319afedc3fd5a1.jpg"
+                    },
+                    {
+                        "cat_id": 6,
+                        "cat_name": "海信",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/5e38cf9e6e7c46a17fe1c597a883ae627977b296.jpg"
+                    },
+                    {
+                        "cat_id": 8,
+                        "cat_name": "夏普",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/cece39bd7e9654c20043e4af71696e1f838d4a22.jpg"
+                    },
+                    {
+                        "cat_id": 9,
+                        "cat_name": "创维",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/f62eba98423af3311487f3331c6798d8f099c893.jpg"
+                    },
+                    {
+                        "cat_id": 10,
+                        "cat_name": "TCL",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/86832cc37db8474ac07853c835009f9873eaec89.jpg"
+                    },
+                    {
+                        "cat_id": 11,
+                        "cat_name": "PPTV",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/41c169f14680b3ebf88b4a37ea09085ed731c985.jpg"
+                    },
+                    {
+                        "cat_id": 12,
+                        "cat_name": "小米",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/5c282c3ec283fbc092107f8c7b86f212365acdfa.jpg"
+                    },
+                    {
+                        "cat_id": 13,
+                        "cat_name": "长虹",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/14291787e1f9f0215816048e813e4ec4fbb3dffe.jpg"
+                    },
+                    {
+                        "cat_id": 14,
+                        "cat_name": "康佳",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/de58455691bc7b85351055c220f1a5410ab15693.jpg"
+                    },
+                    {
+                        "cat_id": 15,
+                        "cat_name": "三星",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/8b36730c09815e90de1f86664baef8690c89e979.jpg"
+                    },
+                    {
+                        "cat_id": 16,
+                        "cat_name": "飞利浦",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/7643c31541df41da21c9e734bd2d9a18fed2a2aa.jpg"
+                    },
+                    {
+                        "cat_id": 17,
+                        "cat_name": "索尼",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/e8c76dd2bb103a620929bcb4ad5c5431d62418d3.jpg"
+                    },
+                    {
+                        "cat_id": 18,
+                        "cat_name": "先锋",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/5a46bef92bf32f0157b4d5a6d9a35ca8a5615aca.jpg"
+                    },
+                    {
+                        "cat_id": 19,
+                        "cat_name": "家庭影院",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/5fae60f2cc05c53eaf43075db7eb82bfc9bba9b4.jpg"
+                    },
+                    {
+                        "cat_id": 20,
+                        "cat_name": "音响",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/5515d491f88587084e59aac50010458bb916ee17.jpg"
+                    },
+                    {
+                        "cat_id": 21,
+                        "cat_name": "盒子",
+                        "cat_pid": 3,
+                        "cat_level": 2,
+                        "cat_deleted": false,
+                        "cat_icon": "full/e65bab9fcb64c336a3f5fba3b2174fef41f12330.jpg"
+                    }
+                ]
             }
-            
         ]
-    },
-   
+    }
 ]

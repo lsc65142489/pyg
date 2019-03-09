@@ -19,7 +19,16 @@
         </div>
     </header>
     <!-- 主体部分 -->
-    
+    <div class="pyg_view">
+        <div class="left_box">
+            <ul class="left_menu">
+
+            </ul>
+        </div>
+        <div class="right_box">
+            
+        </div>
+    </div>
     <footer class="pyg_footer">
         <a href="javascript:;">
             <i class="fa fa-home"></i>
@@ -41,6 +50,34 @@
 </body>
 
 </html>
+<!-- 模板开始 -->
+<!-- 右侧内容模板 -->
+<script type="text/html" id="rightTp1" >
+    {{each  arr item index}}
+    <div class="right_item">
+            <!-- 标题 -->
+            <div class="item_title">
+                {{item.cat_name}}
+            </div>
+            <!-- 里面的商品内容 -->
+            <ul class="item_list">
+                {{each item.children item2 index2}}
+                <li>
+                        <a href="javascript:;">
+                            <img src="http://api.pyg.ak48.xyz/{{item2.cat_icon}}" alt="">
+                            <div class="item_name">
+                                {{item2.cat_name}}
+                            </div>
+                        </a>
+                    </li>
+                
+                {{/each}}
+                    
+            </ul>
+        </div>
+    {{/each}}
+</script>
+<!-- 模板结束 -->
 <script src="./lib/mui/js/mui.js"></script>
 <script src="./lib/zepto/zepto.js"></script>
 <script src="./lib/arttemplate/template-web.js"></script>
