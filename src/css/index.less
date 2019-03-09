@@ -11,9 +11,8 @@ body{
 }
 .pyg_view{
     overflow: scroll;
-    background-color: aqua;
 }
-
+// 头部
 .pyg_header{
     // background-color: #f00;
     padding: 5px;
@@ -24,6 +23,7 @@ body{
     left: 0;
     top: 0;
 }
+// 尾部
 .pyg_footer{
     background-color: #00f;
     width: 100%;
@@ -31,4 +31,18 @@ body{
     position: fixed;
     left: 0;
     bottom: 0;
+}
+
+// 分类菜单开始
+.pyg_cates{
+    width: 100%;
+    display: flex;
+    a{
+        flex: 1;
+        text-align: center;
+        padding: 12px;
+        img{
+            width:100%;
+        }
+    }
 }

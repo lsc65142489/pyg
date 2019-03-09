@@ -9,7 +9,6 @@ body {
 }
 .pyg_view {
   overflow: scroll;
-  background-color: aqua;
 }
 .pyg_header {
   padding: 5px;
@@ -27,6 +26,22 @@ body {
   position: fixed;
   left: 0;
   bottom: 0;
+}
+.pyg_cates {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.pyg_cates a {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 12px;
+}
+.pyg_cates a img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */
